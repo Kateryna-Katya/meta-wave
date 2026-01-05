@@ -1094,3 +1094,82 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     text-align: center;
   }
 }
+/* --- Стили для юридических страниц --- */
+.pages {
+  padding: 160px 0 100px;
+  /* Отступ сверху под хедер */
+  background-color: var(--color-bg);
+  min-height: 80vh;
+}
+
+.pages .container {
+  max-width: 800px;
+  /* Узкая колонка для удобства чтения */
+  background: var(--color-white);
+  padding: 60px;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.pages h1 {
+  font-family: var(--font-accent);
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: var(--color-dark);
+  line-height: 1.2;
+}
+
+.pages h2 {
+  font-family: var(--font-accent);
+  font-size: 24px;
+  margin: 40px 0 20px;
+  color: var(--color-dark);
+}
+
+.pages p {
+  font-size: 16px;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.pages ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.pages li {
+  font-size: 16px;
+  color: var(--color-text-light);
+  margin-bottom: 15px;
+  position: relative;
+  list-style: disc;
+}
+
+.pages strong {
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.pages a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.pages a:hover {
+  color: var(--color-dark);
+}
+
+@media (max-width: 768px) {
+  .pages {
+    padding: 120px 0 60px;
+  }
+
+  .pages .container {
+    padding: 30px;
+  }
+
+  .pages h1 {
+    font-size: 28px;
+  }
+}
